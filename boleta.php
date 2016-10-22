@@ -3,13 +3,20 @@
 //hablamos a la libreria
 require('libraries/fpdf/fpdf.php');
 
+//creamos PDF
+$pdf = new FPDF('P','mm','Letter');
+
+//Establecemos los márgenes izquierda, arriba y derecha: 
+$pdf->SetMargins(30, 25 , 30);
+//Establecemos el margen inferior: 
+$pdf->SetAutoPageBreak(true,25);
+
 //creamos una nueva pagina 
-$pdf = new FPDF();
 $pdf->AddPage();
 
 //-->insertamos imagen   
 //            ubicacion x, ubicacion y tamaño
-$pdf->Image('images/logo_sep.jpg',20,8,33);
+$pdf->Image('images/logo_sep.jpg',30,20,33);
 $pdf->Cell(60,10,'',0,1); //salto de linea
 
 
