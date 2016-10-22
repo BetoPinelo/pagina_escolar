@@ -1,6 +1,6 @@
 <?php 
 
-$server		= 'mysql:dbname=sistemascalificaciones_bachi; host=127.0.0.1';
+$server		= 'mysql:dbname=basecbtis; host=127.0.0.1';
 $user		= 'root';
 $password	= '';
 
